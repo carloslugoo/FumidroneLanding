@@ -15,53 +15,74 @@
     width: 250px;
     height: 250px;
 }
-.hero{
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
+body, html {
+    margin: 0;
+    padding: 0;
 }
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    z-index: -1;
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh; /* Ajusta al menos el 50% de la altura de la ventana gráfica */
+}
+
+.hero video{
+    width: 100%;
+    min-height: 100vh;
     object-fit: cover;
 }
-.overlay{ 
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.5;
-} 
-.overlaycontent{
-    color: #fff;
-    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.overlaytxt{
-    margin-left: 15px;
+.overlaycontent {
+    text-align: center;
+    color: #fff;
 }
 
-.logo h1 {
-    color: white;
-    font-family: 'Cinzel', serif;
-    font-size: 60px;
-    font-weight: 300;
-    line-height:1.3;
+.overlaytxt img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
-.logo span {
-    font-size: 60px;
-    color: #99FF33;
-    display: inline-block;
-    line-height: 1;
-    padding: 1px;
-    border-style: solid;
-    border-width: 6px;
-    margin-left: 5px;
+
+
+.navbar{
+    max-height: 100px;
+    width: 100%;
+    z-index: 1000; /* Ajusta el índice z para que esté por encima de otros elementos */
+}
+
+.navbar img {
+    width: 100px; /* Ajusta el ancho según tus preferencias */
+    height: auto;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 100px;
+}
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-nav .nav-item {
+    margin-right: 20px; /* Ajusta el espacio entre los elementos, según tus preferencias */
+}
+.section1{
+    width: 100%;
+    min-height: 70vh;
+    object-fit: cover;
 }
