@@ -55,31 +55,21 @@ body, html {
 }
 
 
-.navbar{
-    max-height: 100px;
-    width: 100%;
-    z-index: 1000; /* Ajusta el índice z para que esté por encima de otros elementos */
-}
+/* modificar la clase navbar directamente sobreescribe las clases predefinidas en bootstrap
+fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamente */
 
 .navbar img {
     width: 100px; /* Ajusta el ancho según tus preferencias */
     height: auto;
 }
-.navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-    max-height: 100px;
-}
+
 .navbar .navbar-brand {
     display: flex;
     align-items: center;
 }
 .navbar .navbar-nav .nav-item {
     margin-right: 20px; /* Ajusta el espacio entre los elementos, según tus preferencias */
+    font-size: larger;
 }
 .section1{
     width: 100%;
