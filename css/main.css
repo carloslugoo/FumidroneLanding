@@ -61,7 +61,13 @@ body, html {
 
 /* modificar la clase navbar directamente sobreescribe las clases predefinidas en bootstrap
 fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamente */
-
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 .navbar img {
     width: 100px; /* Ajusta el ancho según tus preferencias */
     height: auto;
@@ -88,8 +94,41 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
     min-height: 70vh;
     object-fit: cover;
     background-size: cover;
+    background-color: #92C80C;
     z-index: 15;
 }
 .icon{
     font-size: 2em;
+}
+.svg-class{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #92C80C;
+}
+.service-svg {
+    color: white;
+}
+
+.bg-svg {
+    background-color: #92C80C; /* Color verde especificado */
+    border-radius: 50%; /* Hace que el fondo sea redondeado */
+    padding: 20px; /* Ajusta el espacio dentro del fondo redondeado según tus necesidades */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.custom-btn {
+    color: #92C80C; /* Texto blanco *//* Color personalizado */
+    border-color: #92C80C;
+    margin-bottom: 15px; /* Color del borde */
+    width: 15%;
+    height: 100%;
+    font-weight: bold;
+}
+.custom-btn:hover {
+    background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
+    border-color: #92C80C;
+    color: white;
 }
