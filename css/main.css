@@ -166,11 +166,10 @@ hr {
     font-weight: 600;
     font-family:Arial, Helvetica, sans-serif
 }
-  
-=======
+
 .svg-class{
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     color: #92C80C;
@@ -199,5 +198,12 @@ hr {
     background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
     border-color: #92C80C;
     color: white;
+}
+.svg-class2{
+    transform: scaleY(-1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #92C80C;
 }
 
