@@ -16,7 +16,7 @@
     align-items: center;
 }  
 .spinner-border{
-    color: greenyellow;
+    color: #92C80C;
     width: 250px;
     height: 250px;
 }
@@ -100,6 +100,74 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
 .icon{
     font-size: 2em;
 }
+
+.contextItem img{
+    /* Podriamos ponerle bordes personalizados o alguna mamerta de esas  */
+    border-color: #92C80C;
+    border-bottom-right-radius: 70%;
+    border-top-left-radius: 70%;
+    border-width: 100px;
+    
+}
+
+.svg-class{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #92C80C;
+}
+.service-svg {
+    color: white;
+}
+
+.bg-svg {
+    background-color: #92C80C; /* Color verde especificado */
+    border-radius: 50%; /* Hace que el fondo sea redondeado */
+    padding: 20px; /* Ajusta el espacio dentro del fondo redondeado según tus necesidades */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.custom-btn {
+    color: #92C80C; /* Texto blanco *//* Color personalizado */
+    border-color: #92C80C;
+    margin-bottom: 15px; /* Color del borde */
+    width: 20%;
+    height: 100%;
+    font-weight: bold;
+}
+.custom-btn:hover {
+    background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
+    border-color: #92C80C;
+    color: white;
+}
+
+hr {
+    background-color: #92C80C;
+    height: 5px;
+  margin-left: 0%;
+  width: 50%;
+  }
+  .sectionhr {
+    background-color: #92C80C;
+    height: 5px;
+  margin-left: 0%;
+  width: 100%;
+  }
+
+.sectiontittle{
+    font-size: 75px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
+}
+.articletittle{
+    font-size: 55px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
+}
+  
+=======
 .svg-class{
     position: absolute;
     bottom: 0;
@@ -132,3 +200,4 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
     border-color: #92C80C;
     color: white;
 }
+
