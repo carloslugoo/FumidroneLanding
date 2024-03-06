@@ -146,15 +146,15 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
 hr {
     background-color: #92C80C;
     height: 5px;
-    margin-left: 0%;
-    width: 50%;
-}
+  margin-left: 0%;
+  width: 50%;
+  }
   .sectionhr {
     background-color: #92C80C;
     height: 5px;
-    margin-left: 0%;
-    width: 100%;
-}
+  margin-left: 0%;
+  width: 100%;
+  }
 
 .sectiontittle{
     font-size: 75px;
@@ -166,10 +166,11 @@ hr {
     font-weight: 600;
     font-family:Arial, Helvetica, sans-serif
 }
-
+  
+=======
 .svg-class{
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     color: #92C80C;
@@ -190,7 +191,7 @@ hr {
     color: #92C80C; /* Texto blanco *//* Color personalizado */
     border-color: #92C80C;
     margin-bottom: 15px; /* Color del borde */
-    width: 20%;
+    width: 15%;
     height: 100%;
     font-weight: bold;
 }
@@ -198,12 +199,5 @@ hr {
     background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
     border-color: #92C80C;
     color: white;
-}
-.svg-class2{
-    transform: scaleY(-1);
-    position: absolute;
-    left: 0;
-    width: 100%;
-    color: #92C80C;
 }
 
