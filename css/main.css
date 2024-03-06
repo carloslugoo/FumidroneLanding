@@ -103,10 +103,37 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
     
 }
 
-.btn-success{
-    background-color: #92C80C;
-    font-size: large;
-    font-weight: 500;
+.svg-class{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #92C80C;
+}
+.service-svg {
+    color: white;
+}
+
+.bg-svg {
+    background-color: #92C80C; /* Color verde especificado */
+    border-radius: 50%; /* Hace que el fondo sea redondeado */
+    padding: 20px; /* Ajusta el espacio dentro del fondo redondeado según tus necesidades */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.custom-btn {
+    color: #92C80C; /* Texto blanco *//* Color personalizado */
+    border-color: #92C80C;
+    margin-bottom: 15px; /* Color del borde */
+    width: 20%;
+    height: 100%;
+    font-weight: bold;
+}
+.custom-btn:hover {
+    background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
+    border-color: #92C80C;
+    color: white;
 }
 
 hr {
