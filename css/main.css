@@ -110,13 +110,6 @@ fue eso lo que causaba el bug que impedia que el collapse se muestre adecuadamen
     
 }
 
-.svg-class{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: #92C80C;
-}
 .service-svg {
     color: white;
 }
@@ -164,13 +157,18 @@ hr {
 .articletittle{
     font-size: 55px;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    color: #92C80C;
+    
 }
-  
-=======
 .svg-class{
     position: absolute;
     bottom: 0;
+}
+
+.svg-class{
+    position: absolute;
+    bottom: -1px;
     left: 0;
     width: 100%;
     color: #92C80C;
@@ -200,4 +198,18 @@ hr {
     border-color: #92C80C;
     color: white;
 }
+.svg-class2{
+    transform: scaleY(-1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #92C80C;
+}
 
+.brandContext p{
+    font-size: 3zvmin;
+}
+
+a, a:visited, a:hover, a:active {
+    color: white;
+  }
