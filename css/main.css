@@ -219,3 +219,19 @@ hr {
 .section-numeros{
     background-color: #92C80C;
 }
+
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+} 
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+.shadow-green{
+    -webkit-filter: drop-shadow(2px 1px 0 #92C80C) drop-shadow(-1px -1px 0 #92C80C);
+    filter:drop-shadow(2px 1px 0 #92C80C) drop-shadow(-1px -1px 0 #92C80C);
+}
+.shadow-black{
+    -webkit-filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    filter:drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+}
