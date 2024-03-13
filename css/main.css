@@ -89,6 +89,15 @@ body, html {
 .icon{
     font-size: 2em;
 }
+.cust-btn{
+    background: none;
+    border: none;
+    height: 60%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cust-btn:hover{
+    transform: scale(1.1);
+}
 
 .contextItem img{
     /* Podriamos ponerle bordes personalizados o alguna mamerta de esas  */
@@ -111,6 +120,7 @@ body, html {
     height: 100px;
     margin-bottom: 10px;
 }
+/* ??? */
 .custom-btn {
     color: #92C80C; /* Texto blanco *//* Color personalizado */
     border-color: #92C80C;
@@ -154,7 +164,7 @@ hr {
 .service-svg {
     color: white;
 }
-
+/* ???? */
 .custom-btn {
     color: #92C80C; /* Texto blanco *//* Color personalizado */
     border-color: #92C80C;
@@ -180,10 +190,6 @@ hr {
 
 .brandContext p{
     font-size: 3zvmin;
-}
-
-a, a:visited, a:hover, a:active {
-    color: white;
 }
 
 .element {
