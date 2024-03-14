@@ -246,8 +246,8 @@ footer{
     height: 200px;
     width: 400px;
     position: absolute;
-    top: -100px;
-    right: 40px;
+    top: -150px;
+    right: 30px;
     transform-origin: center bottom;
     animation-fill-mode: both;
     animation-name: banner3Shake;
@@ -255,6 +255,9 @@ footer{
     animation-duration: 5s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
+}
+.footer-img{
+    margin-top: -50px;
 }
 @media (max-width:768px){
     .site-footer-dron{
@@ -272,7 +275,7 @@ footer{
 
 .grey-diagonal-wrapper {
     width: 120%;
-    height: 200px;
+    height: 280px;
     background-color: white;
     overflow: hidden;
     transform: translateY(-80px)rotate(6deg);
