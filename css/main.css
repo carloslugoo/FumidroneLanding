@@ -236,6 +236,36 @@ hr {
     filter:drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
 }
 
+
 footer{
-    background-color: black;
+    background-color: #92C80C;
+    position: relative;
+}
+
+.site-footer-dron{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: -100px;
+    right: 40px;
+    transform-origin: center bottom;
+    animation-fill-mode: both;
+    animation-name: banner3Shake;
+    animation-timing-function: ease-out;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@media (max-width:768px){
+    .site-footer-dron{
+        display: none;
+    }
+}
+@keyframes banner3Shake{
+    0%,100%{
+        transform: perspective(400px) rotate(0deg) translateZ(0px) translateY(0) translateX(0);
+    }
+    50%{
+        transform: perspective(400px) rotate(5deg) translateZ(30px) translateY(10px) translateX(0);
+    }
 }
