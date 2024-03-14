@@ -269,3 +269,32 @@ footer{
         transform: perspective(400px) rotate(5deg) translateZ(30px) translateY(10px) translateX(0);
     }
 }
+
+.grey-diagonal-wrapper {
+    width: 120%;
+    height: 200px;
+    background-color: #1c7ddd;
+    overflow: hidden;
+    transform: translateY(-80px)rotate(6deg);
+}
+.decoration-wrap.reverse.absolute {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+decoration-wrap {
+    width: 100%;
+    object-fit: cover;
+    background-image: none;
+    position: relative;
+}
+.section-new.light-blue {
+    background-color: #92C80C;
+    position: relative;
+    overflow: hidden;
+}
+.dots-block{
+    height: 200px;
+}
