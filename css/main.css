@@ -273,7 +273,7 @@ footer{
 .grey-diagonal-wrapper {
     width: 120%;
     height: 200px;
-    background-color: #1c7ddd;
+    background-color: white;
     overflow: hidden;
     transform: translateY(-80px)rotate(6deg);
 }
