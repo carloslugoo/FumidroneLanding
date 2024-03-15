@@ -265,6 +265,9 @@ footer{
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
+.wrapper{
+    margin-top:-62px ;
+}
 .footer-img{
     margin-top: -50px;
 }
