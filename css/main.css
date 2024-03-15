@@ -59,12 +59,22 @@ body, html {
 }
 
 .navbar{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    background-color: transparent;
 }
+
+.navbar-scrolled {
+    background-color: white !important;
+    transition: background-color 0.7s ease;
+}
+.navbar-scrolled a{
+    color: black !important;
+}
+
 .navbar img {
     width: 100px; /* Ajusta el ancho según tus preferencias */
     height: auto;
@@ -175,19 +185,6 @@ hr {
 .service-svg {
     color: white;
 }
-/* ???? */
-.btn.custom-btn {
-    color: #92C80C;
-    border-color: #92C80C;
-    font-weight: bold;
-}
-
-.btn.custom-btn:hover {
-    background-color: #92C80C;
-    border-color: #92C80C;
-    color: white;
-}
-
 
 .svg-class2{
     transform: scaleY(-1);

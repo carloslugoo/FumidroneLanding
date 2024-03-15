@@ -29,6 +29,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+window.addEventListener('scroll', function() {
+    let navbar = document.querySelector('nav');
+    if (window.scrollY > 60) {
+        navbar.classList.add('navbar-scrolled');
+        document.getElementById("imageid").src="./images/LogoFondoBlanco.png";
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+        document.getElementById("imageid").src="./images/LogoFondoNegro.png";
+    }
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var counters = document.querySelectorAll('.counter');
 
