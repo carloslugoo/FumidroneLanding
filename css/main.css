@@ -122,17 +122,28 @@ body, html {
 }
 /* ??? */
 .custom-btn {
-    color: #92C80C; /* Texto blanco *//* Color personalizado */
+    color: #92C80C;
     border-color: #92C80C;
-    margin-bottom: 15px; /* Color del borde */
-    width: 20%;
-    height: 100%;
+    margin-bottom: 15px;
+    width: auto; /* Ancho automático */
+    max-width: 200px; /* Ancho máximo para evitar que el botón se expanda demasiado en pantallas grandes */
+    height: auto;
     font-weight: bold;
+    padding: 10px 20px; /* Añade algo de relleno para que el botón sea más grande */
 }
+
 .custom-btn:hover {
-    background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
+    background-color: #92C80C;
     border-color: #92C80C;
     color: white;
+}
+
+/* Ajustes adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .custom-btn {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        max-width: none; /* Eliminar el ancho máximo */
+    }
 }
 
 hr {
@@ -165,16 +176,14 @@ hr {
     color: white;
 }
 /* ???? */
-.custom-btn {
-    color: #92C80C; /* Texto blanco *//* Color personalizado */
+.btn.custom-btn {
+    color: #92C80C;
     border-color: #92C80C;
-    margin-bottom: 15px; /* Color del borde */
-    width: 15%;
-    height: 100%;
     font-weight: bold;
 }
-.custom-btn:hover {
-    background-color:#92C80C; /* Cambia el color al pasar el ratón por encima */
+
+.btn.custom-btn:hover {
+    background-color: #92C80C;
     border-color: #92C80C;
     color: white;
 }
@@ -298,6 +307,61 @@ decoration-wrap {
     position: relative;
     overflow: hidden;
 }
-.dots-block{
-    height: 200px;
+
+.section__col.section__col--bottom {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.block__grid-wrap {
+    width: 100%;
+    height: auto;
+}
+.block__img-grid {
+    grid-column-gap: 30px;
+    grid-template: "Area Area-2 Area-3"/1fr 1fr 1fr;
+}
+.block__img-wrap.grid--mid {
+    margin-top: 32px;
+}
+
+.block__grid-img {
+    width: 100%; /* Establece el ancho al 100% para que se ajuste al contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    display: block; /* Evita espacios en blanco debajo de las imágenes */
+    border-radius: 8px;
+    box-shadow: 0 22px 10px rgba(0,0,0,.1);
+}
+
+.section__col-wrap.vertical {
+    flex-direction: column;
+}
+.section__col.section__col--bottom {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.block__img-wrap{
+    margin-right: 30px;
+
+}
+.new-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Cambiar la disposición de los elementos en dispositivos móviles */
+@media (max-width: 768px) {
+    .section__col.section__col--bottom {
+        flex-direction: column;
+    }
+    .block__img-wrap {
+        margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+        margin-bottom: 20px; /* Espacio entre las imágenes en dispositivos móviles */
+    }
+    .block__img-wrap.grid--mid {
+        margin-top: 0; /* Eliminar el margen superior en dispositivos móviles */
+    }
 }
