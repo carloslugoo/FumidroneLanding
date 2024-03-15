@@ -368,6 +368,15 @@ decoration-wrap {
     }
 }
 .hero-about{
-    height: 55vh;
-
+    height: 97vh;
+    background-image: url("/images/Dronvolando.JPG");
+    background-position: center;
+    background-size: cover;
+}
+.hero-about svg{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    color: white;
 }
