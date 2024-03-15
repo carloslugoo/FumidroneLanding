@@ -130,31 +130,8 @@ body, html {
     height: 100px;
     margin-bottom: 10px;
 }
-/* ??? */
-.custom-btn {
-    color: #92C80C;
-    border-color: #92C80C;
-    margin-bottom: 15px;
-    width: auto; /* Ancho automático */
-    max-width: 200px; /* Ancho máximo para evitar que el botón se expanda demasiado en pantallas grandes */
-    height: auto;
-    font-weight: bold;
-    padding: 10px 20px; /* Añade algo de relleno para que el botón sea más grande */
-}
 
-.custom-btn:hover {
-    background-color: #92C80C;
-    border-color: #92C80C;
-    color: white;
-}
 
-/* Ajustes adicionales para dispositivos móviles */
-@media (max-width: 768px) {
-    .custom-btn {
-        width: 100%; /* Ocupar todo el ancho disponible */
-        max-width: none; /* Eliminar el ancho máximo */
-    }
-}
 
 hr {
     background-color: #92C80C;
@@ -364,4 +341,33 @@ decoration-wrap {
     .block__img-wrap.grid--mid {
         margin-top: 0; /* Eliminar el margen superior en dispositivos móviles */
     }
+}
+
+.btn.custom-btn {
+    color: #92C80C;
+    border-color: #92C80C;
+    font-weight: bold;
+}
+
+.btn.custom-btn:hover {
+    background-color: #92C80C;
+    border-color: #92C80C;
+    color: white;
+}
+.btn.custom-btn:active {
+    background-color: #92C80C;
+    border-color: #92C80C;
+    color: white;
+}
+
+/* Ajustes adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .custom-btn {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        max-width: none; /* Eliminar el ancho máximo */
+    }
+}
+.hero-about{
+    height: 55vh;
+
 }
