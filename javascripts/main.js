@@ -31,9 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 window.addEventListener('scroll', function() {
     let navbar = document.querySelector('nav');
+    let botonnav = document.getElementById('tatare')
+    let spannav = document.getElementById('icon1')
     if (window.scrollY > 60) {
         navbar.classList.add('navbar-scrolled');
         document.getElementById("imageid").src="./images/LogoFondoBlanco.png";
+        botonnav.classList.add('custom-navbar');
+        spannav.classList.add('custom-toggler');
     } else {
         navbar.classList.remove('navbar-scrolled');
         document.getElementById("imageid").src="./images/LogoFondoNegro.png";
