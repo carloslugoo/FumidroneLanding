@@ -369,7 +369,7 @@ decoration-wrap {
 }
 .hero-about{
     height: 97vh;
-    background-image: url("/images/Dronvolando.JPG");
+    background-image: url("images/Dronvolando.JPG");
     background-position: center;
     background-size: cover;
 }
