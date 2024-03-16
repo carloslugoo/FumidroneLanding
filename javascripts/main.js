@@ -7,12 +7,10 @@ window.addEventListener('scroll', function () {
         navbar.classList.add('navbar-scrolled');
         document.getElementById("imageid").src = "./images/LogoFondoBlanco.png";
         botonnav.classList.add('custom-navbar');
-        spannav.classList.add('custom-toggler');
     } else {
         navbar.classList.remove('navbar-scrolled');
         document.getElementById("imageid").src = "./images/LogoFondoNegro.png";
         botonnav.classList.remove('custom-navbar');
-        spannav.classList.remove('custom-toggler');
     }
 });
 
