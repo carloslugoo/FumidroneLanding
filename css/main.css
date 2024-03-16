@@ -1,9 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
+
+* {
     font-family: "Open Sans", sans-serif;
 }
-.spinnerWrapper{
+
+.spinnerWrapper {
     background-color: white;
     position: fixed;
     width: 100%;
@@ -14,13 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}  
-.spinner-border{
+}
+
+.spinner-border {
     color: #92C80C;
     width: 250px;
     height: 250px;
 }
-body, html {
+
+body,
+html {
     margin: 0;
     padding: 0;
 }
@@ -28,10 +32,11 @@ body, html {
 .hero {
     position: relative;
     overflow: hidden;
-    max-height: 100vh; /* Ajusta al menos el 50% de la altura de la ventana gráfica */
+    max-height: 100vh;
+    /* Ajusta al menos el 50% de la altura de la ventana gráfica */
 }
 
-.hero video{
+.hero video {
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
@@ -48,6 +53,7 @@ body, html {
     justify-content: center;
     align-items: center;
 }
+
 .overlaycontent {
     text-align: center;
     color: #fff;
@@ -58,7 +64,7 @@ body, html {
     height: auto;
 }
 
-.navbar{
+.navbar {
     position: relative;
     top: 0;
     left: 0;
@@ -71,12 +77,14 @@ body, html {
     background-color: white !important;
     transition: background-color 0.7s ease;
 }
-.navbar-scrolled a{
+
+.navbar-scrolled a {
     color: black !important;
 }
 
 .navbar img {
-    width: 100px; /* Ajusta el ancho según tus preferencias */
+    width: 100px;
+    /* Ajusta el ancho según tus preferencias */
     height: auto;
 }
 
@@ -84,38 +92,43 @@ body, html {
     display: flex;
     align-items: center;
 }
+
 .navbar .navbar-nav .nav-item {
-    margin-right: 20px; /* Ajusta el espacio entre los elementos, según tus preferencias */
+    margin-right: 20px;
+    /* Ajusta el espacio entre los elementos, según tus preferencias */
     font-size: larger;
 }
+
 .separator {
     display: block;
     width: 150px;
     height: 5px;
     background-color: #92C80C;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.icon{
+.icon {
     font-size: 2em;
 }
-.cust-btn{
+
+.cust-btn {
     background: none;
     border: none;
     height: 60%;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cust-btn:hover{
+
+.cust-btn:hover {
     transform: scale(1.1);
 }
 
-.contextItem img{
+.contextItem img {
     /* Podriamos ponerle bordes personalizados o alguna mamerta de esas  */
     border-color: #92C80C;
     border-bottom-right-radius: 70%;
     border-top-left-radius: 70%;
     border-width: 100px;
-    
+
 }
 
 .service-svg {
@@ -123,9 +136,12 @@ body, html {
 }
 
 .bg-svg {
-    background-color: #92C80C; /* Color verde especificado */
-    border-radius: 50%; /* Hace que el fondo sea redondeado */
-    padding: 20px; /* Ajusta el espacio dentro del fondo redondeado según tus necesidades */
+    background-color: #92C80C;
+    /* Color verde especificado */
+    border-radius: 50%;
+    /* Hace que el fondo sea redondeado */
+    padding: 20px;
+    /* Ajusta el espacio dentro del fondo redondeado según tus necesidades */
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -140,30 +156,32 @@ hr {
     width: 50%;
 }
 
-.articletittle{
+.articletittle {
     font-size: 55px;
     font-weight: 600;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #92C80C;
-    
+
 }
-.svg-class{
+
+.svg-class {
     position: absolute;
     bottom: 0;
 }
 
-.svg-class{
+.svg-class {
     position: absolute;
     bottom: -1px;
     left: 0;
     width: 100%;
     color: #92C80C;
 }
+
 .service-svg {
     color: white;
 }
 
-.svg-class2{
+.svg-class2 {
     transform: scaleY(-1);
     position: absolute;
     left: 0;
@@ -171,16 +189,19 @@ hr {
     color: #92C80C;
 }
 
-.brandContext p{
+.brandContext p {
     font-size: 3zvmin;
 }
 
 .element {
     opacity: 0;
-    transition: opacity 1s ease-in-out; /* Puedes ajustar la duración y la función de tiempo según tus preferencias */
+    transition: opacity 1s ease-in-out;
+    /* Puedes ajustar la duración y la función de tiempo según tus preferencias */
 }
+
 .counter {
-    transition: opacity 1s ease-in-out; /* Puedes ajustar la duración y la función de tiempo según tus preferencias */
+    transition: opacity 1s ease-in-out;
+    /* Puedes ajustar la duración y la función de tiempo según tus preferencias */
     color: white;
     font-weight: bold;
 }
@@ -192,40 +213,44 @@ hr {
     width: 100%;
     color: #92C80C;
 }
-.svg-class3{
+
+.svg-class3 {
     position: relative;
     left: 0;
     background-color: #92C80C;
     width: 100%;
     height: 3.5rem;
 }
-.section-numeros{
+
+.section-numeros {
     background-color: #92C80C;
 }
 
 .hover-zoom {
     transition: transform 0.3s ease-in-out;
-} 
+}
+
 .hover-zoom:hover {
     transform: scale(1.1);
 }
 
-.shadow-green{
+.shadow-green {
     -webkit-filter: drop-shadow(2px 1px 0 #92C80C) drop-shadow(-1px -1px 0 #92C80C);
-    filter:drop-shadow(2px 1px 0 #92C80C) drop-shadow(-1px -1px 0 #92C80C);
+    filter: drop-shadow(2px 1px 0 #92C80C) drop-shadow(-1px -1px 0 #92C80C);
 }
-.shadow-black{
+
+.shadow-black {
     -webkit-filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
-    filter:drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(2px 1px 0 black) drop-shadow(-1px -1px 0 black);
 }
 
 
-footer{
+footer {
     background-color: #92C80C;
     position: relative;
 }
 
-.site-footer-dron{
+.site-footer-dron {
     height: 200px;
     width: 400px;
     position: absolute;
@@ -239,22 +264,29 @@ footer{
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
-.wrapper{
-    margin-top:-62px ;
+
+.wrapper {
+    margin-top: -62px;
 }
-.footer-img{
+
+.footer-img {
     margin-top: -50px;
 }
-@media (max-width:768px){
-    .site-footer-dron{
+
+@media (max-width:768px) {
+    .site-footer-dron {
         display: none;
     }
 }
-@keyframes banner3Shake{
-    0%,100%{
+
+@keyframes banner3Shake {
+
+    0%,
+    100% {
         transform: perspective(400px) rotate(0deg) translateZ(0px) translateY(0) translateX(0);
     }
-    50%{
+
+    50% {
         transform: perspective(400px) rotate(5deg) translateZ(30px) translateY(10px) translateX(0);
     }
 }
@@ -266,6 +298,7 @@ footer{
     overflow: hidden;
     transform: translateY(-80px)rotate(6deg);
 }
+
 .decoration-wrap.reverse.absolute {
     width: 100%;
     position: absolute;
@@ -279,6 +312,7 @@ decoration-wrap {
     background-image: none;
     position: relative;
 }
+
 .section-new.light-blue {
     background-color: #92C80C;
     position: relative;
@@ -291,55 +325,70 @@ decoration-wrap {
     align-items: center;
     display: flex;
 }
+
 .block__grid-wrap {
     width: 100%;
     height: auto;
 }
+
 .block__img-grid {
     grid-column-gap: 30px;
-    grid-template: "Area Area-2 Area-3"/1fr 1fr 1fr;
+    grid-template: "Area Area-2 Area-3" /1fr 1fr 1fr;
 }
+
 .block__img-wrap.grid--mid {
     margin-top: 32px;
 }
 
 .block__grid-img {
-    width: 100%; /* Establece el ancho al 100% para que se ajuste al contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
-    display: block; /* Evita espacios en blanco debajo de las imágenes */
+    width: 100%;
+    /* Establece el ancho al 100% para que se ajuste al contenedor */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    display: block;
+    /* Evita espacios en blanco debajo de las imágenes */
     border-radius: 8px;
-    box-shadow: 0 22px 10px rgba(0,0,0,.1);
+    box-shadow: 0 22px 10px rgba(0, 0, 0, .1);
 }
 
 .section__col-wrap.vertical {
     flex-direction: column;
 }
+
 .section__col.section__col--bottom {
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.block__img-wrap{
+
+.block__img-wrap {
     margin-right: 30px;
 
 }
+
 .new-container {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* Cambiar la disposición de los elementos en dispositivos móviles */
 @media (max-width: 768px) {
     .section__col.section__col--bottom {
         flex-direction: column;
     }
+
     .block__img-wrap {
-        margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
-        margin-bottom: 20px; /* Espacio entre las imágenes en dispositivos móviles */
+        margin-right: 0;
+        /* Eliminar el margen derecho en dispositivos móviles */
+        margin-bottom: 20px;
+        /* Espacio entre las imágenes en dispositivos móviles */
     }
+
     .block__img-wrap.grid--mid {
-        margin-top: 0; /* Eliminar el margen superior en dispositivos móviles */
+        margin-top: 0;
+        /* Eliminar el margen superior en dispositivos móviles */
     }
 }
 
@@ -354,6 +403,7 @@ decoration-wrap {
     border-color: #92C80C;
     color: white;
 }
+
 .btn.custom-btn:active {
     background-color: #92C80C;
     border-color: #92C80C;
@@ -363,26 +413,48 @@ decoration-wrap {
 /* Ajustes adicionales para dispositivos móviles */
 @media (max-width: 768px) {
     .custom-btn {
-        width: 100%; /* Ocupar todo el ancho disponible */
-        max-width: none; /* Eliminar el ancho máximo */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        max-width: none;
+        /* Eliminar el ancho máximo */
     }
 }
-.hero-about{
+
+.hero-about {
     height: 97vh;
     background-image: url("../images/Dronvolando.JPG");
     background-position: center;
     background-size: cover;
 }
-.hero-about svg{
+
+.hero-about .svg-class {
     position: absolute;
-    bottom: -1px;
+    bottom: -105px;
     left: 0;
     width: 100%;
     color: white;
 }
-.custom-navbar{
+.custom-navbar {
     border: 2px solid black !important;
 }
+
 .custom-toggler {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important
+}
+
+.page-section{
+    margin-top: 100px;
+}
+
+.team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid #92C80C;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.team-member h4, .team-member .h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }
