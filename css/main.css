@@ -424,7 +424,6 @@ decoration-wrap {
     height: 97vh;
     background-image: url("../images/Dronvolando.JPG");
     background-position: center;
-    background-size: cover;
 }
 
 .hero-about .svg-class {
