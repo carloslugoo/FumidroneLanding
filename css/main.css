@@ -424,7 +424,7 @@ decoration-wrap {
     background-color: #92C80C !important;
 }
 
-.page-section{
+.page-section {
     margin-top: 100px;
 }
 
@@ -433,10 +433,13 @@ decoration-wrap {
     height: 14rem;
     border: 0.5rem solid #92C80C;
 }
+
 .rounded-circle {
     border-radius: 50% !important;
 }
-.team-member h4, .team-member .h4 {
+
+.team-member h4,
+.team-member .h4 {
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
