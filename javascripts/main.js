@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const spinnerWrapper = document.querySelector('.spinnerWrapper');
         setTimeout(function () {
             spinnerWrapper.style.display = 'none';
-        }, 250);
+        }, 300);
     }
 
     window.addEventListener('load', function () {
