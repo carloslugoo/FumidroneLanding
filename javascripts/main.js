@@ -1,3 +1,38 @@
+window.onload = function() {
+    const spinnerWrapperElement = document.querySelector('.spinnerWrapper');
+    const imageElement = document.getElementById('imageid');
+    spinnerWrapperElement.style.opacity = '0';
+    imageElement.style.opacity = '1';
+
+    setTimeout(() => {
+        spinnerWrapperElement.style.display = 'none';
+    }, 200);
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.element');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    elements.forEach(function (element) {
+        observer.observe(element);
+    });
+});
+
+
 
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('nav');
