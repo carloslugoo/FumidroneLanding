@@ -1,36 +1,36 @@
-const spinnerWrapperElement = document.querySelector('.spinnerWrapper');
-const videoElement = document.querySelector('video');
-window.addEventListener('load', () => {
-    spinnerWrapperElement.style.opacity = '1';
-});
-videoElement.addEventListener('loadeddata', () => {
-    spinnerWrapperElement.style.opacity = '0';
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-    const imageElement = document.getElementById('imageide');
-    imageElement.style.opacity = '0';
+    // Obtener referencia al spinner y al video
+    const spinnerWrapper = document.querySelector('.spinner-wrapper');
+    const video = document.querySelector('video');
 
-    var elements = document.querySelectorAll('.element');
+    // Función para ocultar el spinner y mostrar el video una vez cargado
+    function hideSpinnerAndShowVideo() {
+        spinnerWrapper.style.display = 'none';
+        video.style.display = 'block';
+    }
 
-    var options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    };
+    // Función para verificar si todos los recursos, incluido el video, se han cargado
+    function allContentLoaded() {
+        const images = document.images;
+        const imagesCount = images.length;
 
-    var observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                observer.unobserve(entry.target);
+        for (let i = 0; i < imagesCount; i++) {
+            if (!images[i].complete) {
+                return false;
             }
-        });
-    }, options);
+        }
 
-    elements.forEach(function (element) {
-        observer.observe(element);
-    });
+        return video.readyState >= 2;
+    }
+
+    // Verificar si todo el contenido se ha cargado cada 100 milisegundos
+    const checkContentLoadedInterval = setInterval(function () {
+        if (allContentLoaded()) {
+            // Si todo el contenido se ha cargado, detener la verificación y mostrar el video
+            clearInterval(checkContentLoadedInterval);
+            hideSpinnerAndShowVideo();
+        }
+    }, 100);
 });
 
 
