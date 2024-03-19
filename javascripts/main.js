@@ -1,38 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener referencia al spinner y al video
-    const spinnerWrapper = document.querySelector('.spinner-wrapper');
-    const video = document.querySelector('video');
-
-    // Función para ocultar el spinner y mostrar el video una vez cargado
-    function hideSpinnerAndShowVideo() {
-        spinnerWrapper.style.display = 'none';
-        video.style.display = 'block';
+    function hideSpinner() {
+        const spinnerWrapper = document.querySelector('.spinnerWrapper');
+        setTimeout(function () {
+            spinnerWrapper.style.display = 'none';
+        }, 250);
     }
 
-    // Función para verificar si todos los recursos, incluido el video, se han cargado
-    function allContentLoaded() {
-        const images = document.images;
-        const imagesCount = images.length;
-
-        for (let i = 0; i < imagesCount; i++) {
-            if (!images[i].complete) {
-                return false;
-            }
-        }
-
-        return video.readyState >= 2;
-    }
-
-    // Verificar si todo el contenido se ha cargado cada 100 milisegundos
-    const checkContentLoadedInterval = setInterval(function () {
-        if (allContentLoaded()) {
-            // Si todo el contenido se ha cargado, detener la verificación y mostrar el video
-            clearInterval(checkContentLoadedInterval);
-            hideSpinnerAndShowVideo();
-        }
-    }, 100);
+    window.addEventListener('load', function () {
+        hideSpinner();
+    });
 });
-
 
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('nav');
